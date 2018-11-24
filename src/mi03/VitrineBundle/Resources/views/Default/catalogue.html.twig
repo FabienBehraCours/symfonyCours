@@ -1,0 +1,19 @@
+{# src/miXX/VitrineBundle/Resources/views/Demo/hello.html.twig #}
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    <h1>Catalogue</h1>
+
+{% for item in categories  %}
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">{{ item.intitule }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,24 @@
+mi03\VitrineBundle\Entity\Commande:
+  type: entity
+  table: commande
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO}
+  fields:
+    etat:
+      type: string
+      length: 20
+    date:
+      type: datetime
+  manyToOne:
+    client:
+      targetEntity: Client
+      inversedBy: commandes
+      joinColumn:
+        name: client_id
+        referencedColumnName: id
+  oneToMany:
+    ligneCommande:
+      targetEntity: LigneCommande
+      mappedBy: commande

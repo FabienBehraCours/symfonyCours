@@ -1,0 +1,20 @@
+mi03_vitrine_homepage:
+    path:     /accueil/{name}
+    defaults: {
+        _controller: mi03VitrineBundle:Default:index,
+        name : visiteur}
+
+mi03_vitrine_mentions:
+    path:   /mentions
+    defaults: {_controller: mi03VitrineBundle:Default:mentions}
+
+mi03_vitrine_catalogue:
+    path:   /catalogue
+    defaults: {_controller: mi03VitrineBundle:Default:catalogue}
+
+mi03_vitrine_articleParCategorie:
+    path: /articleParCategorie/{id}
+    defaults: {_controller: mi03VitrineBundle:Default:articleParCategorie}
+
+
+

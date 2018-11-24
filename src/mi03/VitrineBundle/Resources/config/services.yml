@@ -1,0 +1,4 @@
+services:
+#    mi03_vitrine.example:
+#        class: mi03\VitrineBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

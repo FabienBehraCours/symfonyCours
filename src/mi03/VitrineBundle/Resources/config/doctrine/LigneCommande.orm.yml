@@ -1,0 +1,26 @@
+mi03\VitrineBundle\Entity\LigneCommande:
+  type: entity
+  id:
+    commande:
+      associationKey: true
+    article:
+      associationKey: true
+  fields:
+    quantite:
+      type: integer
+    priceArticle:
+      type: decimal
+      scale: 2
+  manyToOne:
+    article:
+      targetEntity: Article
+      inversedBy: ligneCommande
+      joinColumn:
+        name: article_id
+        referencedColumn: id
+    commande:
+      targetEntity: Commande
+      inversedBy: ligneCommande
+      joinColumn:
+        name: commande_id
+        referencedColumn: id
