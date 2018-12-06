@@ -36,7 +36,7 @@ class Commande
     /**
      * Set etat.
      *
-     * @param bool $etat
+     * @param string $etat
      *
      * @return Commande
      */

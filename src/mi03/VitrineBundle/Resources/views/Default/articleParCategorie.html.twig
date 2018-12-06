@@ -12,6 +12,9 @@
                         <span class="card-title">{{ item.name }}</span>
                         <span class="card-title">{{ item.price }}</span>
                     </div>
+                    <div class="card-action">
+                        <a href="{{ path('mi03_vitrine_ajouter_article',{'id': item.id}) }}">Ajouter au panier</a>
+                    </div>
                 </div>
             </div>
         </div>

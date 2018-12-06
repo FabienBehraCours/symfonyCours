@@ -1,0 +1,34 @@
+{# src/miXX/VitrineBundle/Resources/views/Demo/hello.html.twig #}
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    <h1>Panier</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Article</th>
+            <th>Prix Unitaire</th>
+            <th>Quantite</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+            {% for item in ligneCommande %}
+                <tr>
+                    <td>{{ item.article.name }}</td>
+                    <td>{{ item.priceArticle }}</td>
+                    <td>{{ item.quantite }}</td>
+                </tr>
+            {% endfor %}
+
+
+        </tbody>
+    </table>
+
+    <h4 id="totalPanier">Total :{{ prixPanier }} €</h4>
+    <a href="{{ path('mi03_vitrine_vider_panier') }}" class="waves-effect waves-light btn-large">Vider le panier</a>
+
+
+{% endblock %}

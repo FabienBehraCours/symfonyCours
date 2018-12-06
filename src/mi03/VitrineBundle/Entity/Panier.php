@@ -12,27 +12,39 @@ namespace mi03\VitrineBundle\Entity;
 class Panier
 {
     private $contenu;
+    private $prixPanier;
     //Tableau - contenu[i] = quantite d'article d’id=i dans le panier)
     public function __construct() {
         $this->contenu = [];
+        $prixPanier = 0.0;
     }
     public function getContenu() {
         return $this->contenu;
     }
     public function ajoutArticle (Article $article, $qte = 1) {
         //si l'article est déjà dans une des lignes de commandes, on augmente juste sa quantité, sinon on créer une nouvelle ligne de commande
-        /** @var LigneCommande $ligne */
-        foreach($this->getDoctrine()->getManager()->getRepository(LigneCommande::class)->findAll() as $item => $ligne){
-            if($ligne->getArticle()) // on regarde l'id
+        if($article == null){
+            return false;
         }
-        $commande = $this->getDoctrine()->getManager()->getRepository()->find(1);
-        $ligneDeCommande = new LigneCommande($qte, $article->getPrice(), $article, $commande);
-        array_push($this->contenu,$ligneDeCommande);
+
+       if(array_key_exists($article->getId(), $this->contenu)){
+           $this->contenu[$article->getId()] += $qte;
+       }else{
+           $this->contenu[$article->getId()] = $qte;
+       }
+        $this->prixPanier += $article->getPrice()*$qte;
+
+
     }
     public function supprimeArticle($articleId) {
         // supprimer l'article $articleId du contenu
     }
     public function viderPanier() {
-        $contenu = [];
+        $this->contenu = [];
     }
+
+    public function getPrixPanier(){
+        return $this->prixPanier;
+    }
+
 }

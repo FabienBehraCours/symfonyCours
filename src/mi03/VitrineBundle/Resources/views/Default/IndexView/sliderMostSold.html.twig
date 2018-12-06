@@ -1,0 +1,78 @@
+{# src/miXX/VitrineBundle/Resources/views/Demo/hello.html.twig #}
+{# override the body block from embedded.html.twig #}
+
+{% block content %}
+
+    <h3 class="center-align">Meilleurs ventes</h3>
+
+
+    <div id="mostSoldCarousel" class="carousel">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{ asset('bundles/mi03vitrine/images/1.png') }}">
+                    <span class="card-title black-text">iPhone XS</span>
+                </div>
+                {#<div class="card-content">#}
+                {#<p>I am a very simple card. I am good at containing small bits of information.#}
+                {#I am convenient because I require little markup to use effectively.</p>#}
+                {#</div>#}
+                <div class="card-action">
+                    <a href="{{ path('mi03_vitrine_ajouter_article',{'id': 1}) }}">Ajouter au panier</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{ asset('bundles/mi03vitrine/images/2.png') }}">
+                    <span class="card-title black-text">Asus Zenbook 3 Deluxe</span>
+                </div>
+                {#<div class="card-content">#}
+                {#<p>I am a very simple card. I am good at containing small bits of information.#}
+                {#I am convenient because I require little markup to use effectively.</p>#}
+                {#</div>#}
+                <div class="card-action">
+                    <a href="{{ path('mi03_vitrine_ajouter_article',{'id': 1}) }}">Ajouter au panier</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{ asset('bundles/mi03vitrine/images/3.png') }}">
+                    <span class="card-title black-text">Bose Soundlink Mini 2</span>
+                </div>
+                {#<div class="card-content">#}
+                {#<p>I am a very simple card. I am good at containing small bits of information.#}
+                {#I am convenient because I require little markup to use effectively.</p>#}
+                {#</div>#}
+                <div class="card-action">
+                    <a href="{{ path('mi03_vitrine_ajouter_article',{'id': 1}) }}">Ajouter au panier</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('#mostSoldCarousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+            $('mostSoldCarousel').carousel();
+        });
+    </script>
+
+
+
+
+
+{% endblock %}
+
+
+

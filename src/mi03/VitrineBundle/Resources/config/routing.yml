@@ -10,11 +10,24 @@ mi03_vitrine_mentions:
 
 mi03_vitrine_catalogue:
     path:   /catalogue
-    defaults: {_controller: mi03VitrineBundle:Default:catalogue}
+    defaults: {_controller: mi03VitrineBundle:Catalogue:index}
 
 mi03_vitrine_articleParCategorie:
     path: /articleParCategorie/{id}
-    defaults: {_controller: mi03VitrineBundle:Default:articleParCategorie}
+    defaults: {_controller: mi03VitrineBundle:Catalogue:articleParCategorie}
 
+mi03_vitrine_panier:
+    path: /panier
+    defaults: {_controller: mi03VitrineBundle:Panier:index}
 
+mi03_vitrine_ajouter_article:
+    path: /ajouterArticle/{id}
+    defaults: {_controller: mi03VitrineBundle:Catalogue:ajouterArticle}
 
+mi03_vitrine_vider_panier:
+    path: /viderPanier
+    defaults: {_controller: mi03VitrineBundle:Panier:viderPanier}
+
+mi03_clear_session:
+    path: /clear_session
+    defaults: {_controller: mi03VitrineBundle:Default:clearSession}
