@@ -1,0 +1,50 @@
+{# src/miXX/VitrineBundle/Resources/views/Demo/hello.html.twig #}
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    <h1>Recapitulatif de la commande</h1>
+    <p>Nous vous confirmons la création de la commande suivante :</p>
+    <div class="row">
+        <div class="input-field col s12">
+            <input disabled value="{{ commande.id }}" id="numCommande" type="text" class="validate">
+            <label for="numCommande">numéro de la commande</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input disabled value="{{ commande.client.nom }}" id="nomClient" type="text" class="validate">
+            <label for="nomClient">Nom</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input disabled value="{{ commande.client.mail }}" id="email" type="email" class="validate">
+            <label for="email">Email</label>
+        </div>
+    </div>
+    </br>
+    <p>Avec le panier suivant : </p>
+    <div class="panierRecapCommande">
+        <table>
+            <thead>
+            <tr>
+                <th>Article</th>
+                <th>Prix Unitaire</th>
+                <th>Quantite</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for item in commande.ligneCommande %}
+                <tr>
+                    <td>{{ item.article.name }}</td>
+                    <td>{{ item.priceArticle }}</td>
+                    <td>{{ item.quantite }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+{% endblock %}

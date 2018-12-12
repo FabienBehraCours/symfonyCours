@@ -157,4 +157,9 @@ class Commande
     {
         return $this->ligneCommande;
     }
+
+    public function _toString()
+    {
+        return $this->getId();
+    }
 }

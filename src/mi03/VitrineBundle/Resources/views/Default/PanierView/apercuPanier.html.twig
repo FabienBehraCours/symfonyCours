@@ -1,0 +1,17 @@
+<div class="modal-content">
+    <table>
+        <tbody>
+        {% for item in ligneCommande %}
+            <tr>
+                <td>{{ item.article.name }}</td>
+                <td>{{ item.quantite }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h4 id="totalPanier">Total :{{ prixPanier }} €</h4>
+</div>
+<div class="modal-footer">
+    <a href="{{ path('mi03_vitrine_panier') }}" class="modal-close waves-effect waves-green btn-flat">Voir le panier</a>
+</div>

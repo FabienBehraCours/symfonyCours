@@ -8,7 +8,9 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ asset('bundles/mi03vitrine/css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="{{ asset('bundles/mi03vitrine/css/custom.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ asset('bundles/mi03vitrine/css/panier.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ asset('bundles/mi03vitrine/css/commande.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ asset('bundles/mi03vitrine/css/gestionComptes.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
     <script src="{{ asset('bundles/mi03vitrine/scripts/jQuery-3.3.1.js') }}" type="text/javascript"></script>
     <script src="{{ asset('bundles/mi03vitrine/scripts/materialize.js') }}" type="text/javascript"></script>
 </head>
@@ -19,7 +21,7 @@
             <li><a href="{{ path('mi03_vitrine_homepage', { 'name': 'Fabien' }) }}">Accueil</a></li>
             <li><a href="{{ path('mi03_vitrine_mentions') }}">Mentions légales</a></li>
             <li><a href="{{ path('mi03_vitrine_catalogue') }}">Catalogue</a></li>
-            <li><a href="{{ path('mi03_vitrine_panier') }}">Panier</a></li>
+            <li><a href="#modal1" class="modal-trigger" data-target="apercuPanier">Panier</a></li>
             <li><a href="{{ path('mi03_clear_session') }}">Clear Session</a></li>
         </ul>
 
@@ -31,42 +33,20 @@
 </nav>
 <div class="container">
     {%  block content %}
-    <div class="section">
 
-        <!--   Icon Section   -->
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">Speeds up development</h5>
-
-                    <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                    <h5 class="center">User Experience Focused</h5>
-
-                    <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">Easy to work with</h5>
-
-                    <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <br><br>
     {% endblock %}
+</div>
+
+<!-- Modal Structure -->
+<div id="apercuPanier" class="modal">
+    {{ render(controller('mi03VitrineBundle:ApercuPanier:index')) }}
 </div>
 
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>

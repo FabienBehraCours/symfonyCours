@@ -21,25 +21,34 @@ class PanierController extends Controller
         $panier = $session->get('panier',new Panier());
 
         //création de la commande
-        $commande = $this->callServicePanierToCommande($panier);
+        $commande = $this->callServiceSeeContentPanier($panier);
         $prixPanier = $this->callServiceMontantPanier($panier);
 
         return $this->render(
-            'mi03VitrineBundle:Default:panier.html.twig',
+            'mi03VitrineBundle:Default/PanierView:panier.html.twig',
             array('ligneCommande' => $commande->getLigneCommande(), 'prixPanier' => $prixPanier));
     }
 
-    public function callServicePanierToCommande($panier){
+    public function callServiceSeeContentPanier($panier){
         $command = new Commande();
         $servicePanierToCommande = $this->container->get('mi03_vitrine.panierToCommande');
         if($panier!= null && count($panier->getContenu())>0){
-            $command = $servicePanierToCommande->convertPanierToCommande($panier);
+            $command = $servicePanierToCommande->seeContentPanier($panier);
+        }
+        return $command;
+    }
+
+    public function callServiceCommandToPanier($panier, $idClient){
+        $command = null;
+        $servicePanierToCommande = $this->container->get('mi03_vitrine.panierToCommande');
+        if($panier!= null && count($panier->getContenu())>0){
+            $command = $servicePanierToCommande->convertPanierToCommande($panier, $idClient);
         }
         return $command;
     }
 
     public function callServiceMontantPanier($panier){
-        $serviceMontantPanier = $this->container->get('mi03_vitrine_montantPanier');
+        $serviceMontantPanier = $this->container->get('mi03_vitrine.panierToCommande');
         $sum = 0;
         if($panier!= null && count($panier->getContenu())>0){
             $sum = $serviceMontantPanier->getPricePanier($panier);
@@ -55,6 +64,22 @@ class PanierController extends Controller
 
 
         return $this->redirectToRoute("mi03_vitrine_panier");
+    }
+
+    public function validerPanierAction(){
+        $session = $this->get("session");
+        $panier = $session->get('panier',new Panier());
+        $clientId = $session->get("clientId");
+
+        //création de la commande
+        $commande = $this->callServiceCommandToPanier($panier, $clientId);
+        $prixPanier = $this->callServiceMontantPanier($panier);
+
+        if($commande!= null){
+            return $this->render('@mi03Vitrine/Default/CommandeView/recapCommande.html.twig', array('commande' => $commande));
+        }else{
+            return $this->render('mi03VitrineBundle:Default/ErrorsView:connect.html.twig');
+        }
     }
 
 

@@ -1,0 +1,11 @@
+{# src/miXX/VitrineBundle/Resources/views/Demo/hello.html.twig #}
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    <h1>Erreur de connexion</h1>
+
+    <p>Vous devez vous connecter afin d'effectuer cette action.</p>
+    <a href="#" class="waves-effect waves-light btn-large">Se connecter</a>
+    <a href="{{ path('client_new') }}" class="waves-effect waves-light btn-large">S'inscrire</a>
+
+{% endblock %}

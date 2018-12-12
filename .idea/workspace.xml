@@ -2,41 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="663856bb-2095-4967-86a4-007184846202" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/scripts/jQuery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/ConvertPanierToCommande.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PricePanier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ApercuPanierController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/GestionComptesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/validation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/commande.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/gestionComptes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/panier.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/CommandeView/recapCommande.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/ErrorsView/connect.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/connexion.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/inscription.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView/apercuPanier.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionConnexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionInscription.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Commande.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Panier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Panier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Article.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Article.orm.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Category.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Category.orm.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Client.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Client.orm.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Commande.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Commande.orm.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/LigneCommande.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/LigneCommande.orm.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/articleParCategorie.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/articleParCategorie.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/catalogue.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/catalogue.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/mentions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/mentions.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panier.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView/panier.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/ConvertPanierToCommande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PanierUtils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PricePanier.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,88 +42,116 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/connexion.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="112">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionConnexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
               <folding>
-                <element signature="e#78#113#0#Twig" expanded="true" />
-                <element signature="e#275#330#0#Twig" expanded="true" />
+                <element signature="e#127#158#0#PHP" expanded="true" />
+                <element signature="e#701#727#1#PHP" expanded="true" />
+                <element signature="e#1067#1093#1#PHP" expanded="true" />
+                <element signature="e#1267#1293#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionInscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/scripts/jQuery-3.3.1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="10345" column="49" selection-start-line="10345" selection-start-column="49" selection-end-line="10345" selection-end-column="49" />
+            <state relative-caret-position="656">
+              <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#127#158#0#PHP" expanded="true" />
+                <element signature="e#936#962#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/layout.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/inscription.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+            <state relative-caret-position="256">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/catalogue.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PanierUtils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="795">
+              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="79" selection-end-column="42" />
+              <folding>
+                <element signature="e#129#142#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/articleParCategorie.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/GestionComptesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="76" column="79" selection-start-line="76" selection-start-column="79" selection-end-line="76" selection-end-column="79" />
+              <folding>
+                <element signature="e#129#166#0#PHP" expanded="true" />
+                <element signature="e#2887#2955#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/gestionComptes.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bundles/mi03vitrine/css/gestionComptes.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ApercuPanierController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="15" column="91" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="91" />
+              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+              <folding>
+                <element signature="e#131#170#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panier.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="256">
+              <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+              <folding>
+                <element signature="e#130#169#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/4.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/3.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -140,6 +160,7 @@
     <findStrings>
       <find>getLi</find>
       <find>commande</find>
+      <find>linkSIgnin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,39 +169,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/mentions.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Category.yml" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Category.orm.yml" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Client.orm.yml" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/LigneCommande.orm.yml" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Article.orm.yml" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Commande.orm.yml" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/catalogue.html.twig" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/articleParCategorie.html.twig" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Panier.php" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PanierToCommande.php" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Commande.php" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/ConvertPanierToCommande.php" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/custom.css" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panierVide.html.twig" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panier.html.twig" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/MontantPanier.php" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PricePanier.php" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/scripts/jQuery-3.3.1.js" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/ConvertPanierToCommande.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView/apercuPanier.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/client/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/client/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/client/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ClientController.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/ErrorsView/connect.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView/panier.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/main.css" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/panier.css" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/CommandeView/recapCommande.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Commande.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/client/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CommandeController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/commande/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/commande/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/commande.css" />
         <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Client.orm.yml" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Client.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionConnexion.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/validation.yml" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ApercuPanierController.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PanierUtils.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/connexion.html.twig" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/gestionComptes.css" />
+        <option value="$PROJECT_DIR$/web/bundles/mi03vitrine/css/gestionComptes.css" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/GestionComptesController.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionInscription.php" />
+        <option value="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/inscription.html.twig" />
       </list>
     </option>
   </component>
@@ -262,6 +301,43 @@
             <path>
               <item name="projet" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="commande" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,6 +374,14 @@
               <item name="mi03" type="462c0819:PsiDirectoryNode" />
               <item name="VitrineBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mi03" type="462c0819:PsiDirectoryNode" />
+              <item name="VitrineBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projet" type="b2602c69:ProjectViewProjectNode" />
@@ -353,16 +437,6 @@
               <item name="VitrineBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mi03" type="462c0819:PsiDirectoryNode" />
-              <item name="VitrineBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,7 +467,7 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Default" type="462c0819:PsiDirectoryNode" />
-              <item name="IndexView" type="462c0819:PsiDirectoryNode" />
+              <item name="GestionComptesView" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projet" type="b2602c69:ProjectViewProjectNode" />
@@ -418,6 +492,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView" />
       <recent name="$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView" />
     </key>
   </component>
@@ -457,22 +532,47 @@
       <workItem from="1544010891096" duration="7039000" />
       <workItem from="1544019952877" duration="2687000" />
       <workItem from="1544031972808" duration="697000" />
-      <workItem from="1544099465358" duration="15106000" />
+      <workItem from="1544099465358" duration="25489000" />
+      <workItem from="1544274788887" duration="7910000" />
+      <workItem from="1544468336149" duration="12907000" />
+      <workItem from="1544641188507" duration="8935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71325000" />
+    <option name="totallyTimeSpent" value="111460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="25" width="1920" height="1006" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2139808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2230523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32839224" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32611173" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998565" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" visible="true" weight="0.3301887" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2896237" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26126125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32711622" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -482,326 +582,34 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" visible="true" weight="0.3301887" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.40296495" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.40172166" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ClientController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Category.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/mi03VitrineBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/mentions.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1083" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PanierToCommande.php" />
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/test.php" />
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Client.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Commande.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/scripts/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26880">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/styles/bootstrap-reboot.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/styles/bootstrap-grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Article.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/LigneCommande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="43" column="122" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="122" />
-          <folding>
-            <element signature="e#130#168#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Client.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Commande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/materialize.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Panier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/LigneCommande.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panierVide.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="105" selection-start-line="5" selection-start-column="105" selection-end-line="5" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/scripts/materialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16832">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/ConvertPanierToCommande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="e#129#142#0#PHP" expanded="true" />
-            <element signature="e#1476#1502#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/MontantPanier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding>
-            <element signature="e#130#169#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PricePanier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#570#597#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="e#240#293#0#PHP" expanded="true" />
-            <element signature="e#418#464#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/images/3.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/panier.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/catalogue.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/articleParCategorie.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="91" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#78#113#0#Twig" expanded="true" />
-            <element signature="e#275#330#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/scripts/jQuery-3.3.1.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,10 +621,362 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Panier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="47" />
+          <folding>
+            <element signature="e#78#113#0#Twig" expanded="true" />
+            <element signature="e#275#330#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/IndexView/sliderMostSold.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/ErrorsView/connect.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/LigneCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Form/ClientType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView/apercuPanier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#240#293#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/client/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="51" />
+          <folding>
+            <element signature="e#12#47#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/client/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret column="31" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/client/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/CommandeView/recapCommande.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/PanierView/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="33" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/client/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="e#12#47#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/panier.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/materialize.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/commande/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="e#12#47#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/validation.yml" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/commande/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#12#47#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/mentions.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/catalogue.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/articleParCategorie.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="91" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="91" />
+          <folding>
+            <element signature="e#78#113#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CommandeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PricePanier.php" />
     <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="192">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17744">
+          <caret line="1109" selection-start-line="1109" selection-end-line="1109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/commande.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Commande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/doctrine/Client.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Entity/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/config/validation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="170" selection-start-line="13" selection-start-column="170" selection-end-line="13" selection-end-column="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/CatalogueController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#130#168#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/ApercuPanierController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding>
+            <element signature="e#131#170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/PanierController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+          <folding>
+            <element signature="e#130#169#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/public/css/gestionComptes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/mi03vitrine/css/gestionComptes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Controller/GestionComptesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="76" column="79" selection-start-line="76" selection-start-column="79" selection-end-line="76" selection-end-column="79" />
+          <folding>
+            <element signature="e#129#166#0#PHP" expanded="true" />
+            <element signature="e#2887#2955#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/connexion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionConnexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#127#158#0#PHP" expanded="true" />
+            <element signature="e#701#727#1#PHP" expanded="true" />
+            <element signature="e#1067#1093#1#PHP" expanded="true" />
+            <element signature="e#1267#1293#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/GestionInscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <folding>
+            <element signature="e#127#158#0#PHP" expanded="true" />
+            <element signature="e#936#962#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Services/PanierUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="79" selection-end-column="42" />
+          <folding>
+            <element signature="e#129#142#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mi03/VitrineBundle/Resources/views/Default/GestionComptesView/inscription.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

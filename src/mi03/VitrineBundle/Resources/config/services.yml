@@ -3,9 +3,17 @@ services:
 #        class: mi03\VitrineBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
   mi03_vitrine.panierToCommande:
-    class : mi03\VitrineBundle\Services\ConvertPanierToCommande
+    class : mi03\VitrineBundle\Services\PanierUtils
     arguments: ["@doctrine.orm.entity_manager"]
 
   mi03_vitrine_montantPanier:
     class : mi03\VitrineBundle\Services\PricePanier
+    arguments: ["@doctrine.orm.entity_manager"]
+
+  mi03_vitrine_gestionConnexion:
+    class : mi03\VitrineBundle\Services\GestionConnexion
+    arguments: ["@doctrine.orm.entity_manager"]
+
+  mi03_vitrine_gestionInscription:
+    class: mi03\VitrineBundle\Services\GestionInscription
     arguments: ["@doctrine.orm.entity_manager"]

@@ -1,0 +1,11 @@
+/*#region style recapitulatif commande*/
+.btn-delete > input{
+    color: white;
+}
+.btns-commande{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

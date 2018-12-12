@@ -12,6 +12,7 @@ use mi03\VitrineBundle\Entity\Article;
 use mi03\VitrineBundle\Entity\Category;
 use mi03\VitrineBundle\Entity\Panier;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 
 class CatalogueController extends Controller
@@ -33,7 +34,7 @@ class CatalogueController extends Controller
             array('articlesParCategorie' => $articlesByCategory));
     }
 
-    public function ajouterArticleAction(Article $article){
+    public function ajouterArticleAction(Article $article, Request $request){
         $session = $this->get("session");
         $panier = $session->get('panier', new Panier());
 
@@ -41,6 +42,8 @@ class CatalogueController extends Controller
         $session->set('panier',$panier);
         $session->set('prixPanier',$panier->getPrixPanier());
 
-        return $this->redirectToRoute("mi03_vitrine_articleParCategorie", array('id'=> $article->getCategory()->getId()));
+        $referer = $request->headers->get('referer');
+        return $this->redirect($referer);
+       // return $this->redirectToRoute("mi03_vitrine_articleParCategorie", array('id'=> $article->getCategory()->getId()));
     }
 }

@@ -1,3 +1,7 @@
+mi03_vitrine_client:
+    resource: "@mi03VitrineBundle/Resources/config/routing/client.yml"
+    prefix:   /client
+
 mi03_vitrine_homepage:
     path:     /accueil/{name}
     defaults: {
@@ -28,6 +32,22 @@ mi03_vitrine_vider_panier:
     path: /viderPanier
     defaults: {_controller: mi03VitrineBundle:Panier:viderPanier}
 
+mi03_vitrine_validation_panier:
+    path: /validationPanier
+    defaults: {_controller: mi03VitrineBundle:Panier:validerPanier}
+
+mi03_vitrine_commande:
+    resource: "@mi03VitrineBundle/Resources/config/routing/commande.yml"
+    prefix:   /commande
+
 mi03_clear_session:
     path: /clear_session
     defaults: {_controller: mi03VitrineBundle:Default:clearSession}
+
+mi03_vitrine_login:
+    path: /connexion
+    defaults: {_controller: mi03VitrineBundle:GestionComptes:connexion}
+
+mi03_vitrine_signin:
+    path: /inscription
+    defaults: {_controller: mi03VitrineBundle:GestionComptes:inscription}

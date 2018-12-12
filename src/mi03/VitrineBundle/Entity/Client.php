@@ -157,4 +157,38 @@ class Client
     {
         return $this->commandes;
     }
+    /**
+     * @var string
+     */
+    private $prenom;
+
+
+    /**
+     * Set prenom.
+     *
+     * @param string $prenom
+     *
+     * @return Client
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    /**
+     * Get prenom.
+     *
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    public function getNomComplet(){
+        $str = $this->getPrenom()." ".$this->getNom();
+        return ucwords($str);
+    }
 }
