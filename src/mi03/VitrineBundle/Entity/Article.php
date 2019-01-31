@@ -157,4 +157,37 @@ class Article
     {
         return $this->ligneCommande;
     }
+    /**
+     * @var int
+     */
+    private $quantityInStock;
+
+
+    /**
+     * Set quantityInStock.
+     *
+     * @param int $quantityInStock
+     *
+     * @return Article
+     */
+    public function setQuantityInStock($quantityInStock)
+    {
+        $this->quantityInStock = $quantityInStock;
+
+        return $this;
+    }
+
+    /**
+     * Get quantityInStock.
+     *
+     * @return int
+     */
+    public function getQuantityInStock()
+    {
+        return $this->quantityInStock;
+    }
+
+    public function removeQuantityInStock($quantityInStock){
+        $this->setQuantityInStock($this->getQuantityInStock()-$quantityInStock);
+    }
 }

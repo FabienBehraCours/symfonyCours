@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <h3 class="center-align">Meilleurs ventes</h3>
+    <h3 class="center-align">{{ 'meilleurs_ventes'|trans }}</h3>
 
 
 
@@ -12,23 +12,14 @@
         <div class="carousel-item red black-text" href="#one!">
             <img src="{{ asset('bundles/mi03vitrine/images/1.png') }}">
             <h2>iPhone XS</h2>
-            <div class="carousel-fixed-item center">
-                <a href="{{ path('mi03_vitrine_ajouter_article',{'id': 1}) }}" class="btn waves-effect white grey-text darken-text-2">Ajouter au panier</a>
-            </div>
         </div>
         <div class="carousel-item amber white-text" href="#two!">
             <img src="{{ asset('bundles/mi03vitrine/images/2.png') }}">
             <h2>Asus Zenbook 3 Deluxe</h2>
-            <div class="carousel-fixed-item center">
-                <a href="{{ path('mi03_vitrine_ajouter_article',{'id': 2}) }}" class="btn waves-effect white grey-text darken-text-2">Ajouter au panier</a>
-            </div>
         </div>
         <div class="carousel-item green white-text" href="#three!">
             <img src="{{ asset('bundles/mi03vitrine/images/3.png') }}">
             <h2>Bose Soundlink Mini 2</h2>
-            <div class="carousel-fixed-item center">
-                <a href="{{ path('mi03_vitrine_ajouter_article',{'id': 3}) }}" class="btn waves-effect white grey-text darken-text-2">Ajouter au panier</a>
-            </div>
         </div>
     </div>
 

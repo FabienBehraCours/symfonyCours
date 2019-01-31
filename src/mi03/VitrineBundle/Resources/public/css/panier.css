@@ -8,3 +8,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+#changeQuantityForm #quantityInput{
+    width: 30%;
+}

@@ -3,16 +3,19 @@ mi03\VitrineBundle\Entity\Client:
     nom:
       - NotBlank:  { groups: [registration]}
       - NotNull: { groups: [registration]}
-      - Regex: { pattern: '/^[A-Za-z]+$/',match: false, message: 'Le nom ne doit contenir que des lettres',groups: [registration]}
+      - Regex: { pattern: "/^[a-z ,.'-]+$/",match: false, message: 'Le nom ne doit contenir que des lettres et une majuscule',groups: [registration]}
     prenom:
       - NotBlank: { groups: [registration]}
       - NotNull: { groups: [registration]}
-      - Regex: { pattern: '/^[A-Za-z]+$/',match: false, message: 'Le prenom ne doit contenir que des lettres',groups: [registration]}
+      - Regex: { pattern: "/^[a-z ,.'-]+$/",match: false, message: 'Le prenom ne doit contenir que des lettres et une majuscule',groups: [registration]}
     password:
       - NotBlank: { groups: [registration, login]}
       - NotNull: { groups: [registration, login]}
-      - Length : { min: 8, max: 50,minMessage: 'Le mot de passe doit faire minimum {{ limit }} caractères de long',maxMessage: 'Le mot de passe ne peut pas faire plus de  {{ limit }} caractères de long',groups: [registration, login]}
+      - Length : { min: 8, max: 1500,minMessage: 'Le mot de passe doit faire minimum {{ limit }} caractères de long',maxMessage: 'Le mot de passe ne peut pas faire plus de  {{ limit }} caractères de long',groups: [registration, login]}
       - Regex: { pattern: '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/',match: false, message: 'Le mot de passe doit contenir au moins une lettre minuscule, une lettre minuscule, un symbole et un chiffre',groups: [registration, login]}
     mail:
       - NotBlank: { groups: [registration, login]}
       - NotNull: { groups: [registration, login]}
+
+#mi03\VitrineBundle\Entity\Category:
+#  id:

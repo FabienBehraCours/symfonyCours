@@ -1,0 +1,34 @@
+accueil: Accueil
+mentions_legales: 'Mentions légales'
+catalogue: Catalogue
+panier: Panier
+panier_vide: 'Panier vide'
+espace_admin: 'Espace Admin'
+mon_compte: 'Mon compte'
+mes_commandes: 'Mes commandes'
+logout: 'Se déconnecter'
+login: 'Se connecter'
+register: 'S''enregistrer'
+bienvenue: Bienvenue
+username: 'Nom d''utilisateur'
+password: 'Mot de passe'
+voir_panier: 'Voir le panier'
+article: Article
+prix_unitaire: 'Prix unitaire'
+quantite: Quantite
+vider_panier: 'Vider le panier'
+ajouter_article: 'Ajouter un article'
+valider_panier: 'Valider le panier'
+meilleurs_ventes: 'Meilleures ventes'
+ajouter_panier: 'Ajouter au panier'
+bienvenue_espace_admin: 'Bienvenue dans l''espace admin'
+gestion_commandes: 'Gestion des commandes'
+gestion_clients: 'Gestion des clients'
+gestion_articles: 'Gestion des articles'
+recap_commande: 'Recapitulatif de la commande'
+num_commande: 'Numéro de la commande'
+message_confirm_commande: 'Nous vous confirmons la création de la commande'
+nom: Nom
+mail: Email
+articles_categorie: 'Articles par catégorie'
+rupture_stock: Rupture de stock

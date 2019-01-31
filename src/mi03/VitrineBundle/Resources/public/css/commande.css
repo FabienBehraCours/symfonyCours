@@ -9,3 +9,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}

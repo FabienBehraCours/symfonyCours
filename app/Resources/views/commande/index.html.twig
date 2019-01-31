@@ -19,9 +19,14 @@
                 <td>{% if commande.date %}{{ commande.date|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>
                     <a class="waves-effect waves-light btn" href="{{ path('commande_show', { 'id': commande.id }) }}">Voir</a>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <a class="waves-effect waves-light btn" href="{{ path('commande_edit', { 'id': commande.id }) }}">Modifier</a>
+                    {% endif %}
                 </td>
             </tr>
         {% endfor %}
+
+
         </tbody>
     </table>
 {% endblock %}

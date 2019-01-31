@@ -1,0 +1,19 @@
+{# src/miXX/VitrineBundle/Resources/views/Demo/hello.html.twig #}
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    <h1>{{ 'bienvenue_espace_admin'|trans }}</h1>
+
+    <h3>Section : </h3>
+    <div class="collection">
+        <a href="{{ path('commande_index') }}" class="collection-item">{{ 'gestion_commandes'|trans }}</a>
+        <a href="{{ path('client_index') }}" class="collection-item active">{{ 'gestion_clients'|trans }}</a>
+        <a href="{{ path('article_index') }}" class="collection-item">{{ 'gestion_articles'|trans }}</a>
+    </div>
+
+
+
+
+
+{% endblock %}
+

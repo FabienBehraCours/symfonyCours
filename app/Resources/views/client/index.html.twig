@@ -8,6 +8,7 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
+                <th>Prenom</th>
                 <th>Mail</th>
                 <th>Password</th>
                 <th>Actions</th>
@@ -18,6 +19,7 @@
             <tr>
                 <td><a href="{{ path('client_show', { 'id': client.id }) }}">{{ client.id }}</a></td>
                 <td>{{ client.nom }}</td>
+                <td>{{ client.prenom }}</td>
                 <td>{{ client.mail }}</td>
                 <td>{{ client.password }}</td>
                 <td>
@@ -34,6 +36,10 @@
         {% endfor %}
         </tbody>
     </table>
+
+    {% for i in  1..clients %}
+        <div>{{ i }}</div>
+    {% endfor %}
 
     <ul>
         <li>

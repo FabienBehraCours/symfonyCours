@@ -2,7 +2,7 @@
 {% extends "mi03VitrineBundle::layout.html.twig" %}
 {# override the body block from embedded.html.twig #}
 {% block content %}
-    <h1>Catalogue</h1>
+    <h1>{{ 'catalogue'|trans }}</h1>
 
 {% for item in categories  %}
     <div class="row">

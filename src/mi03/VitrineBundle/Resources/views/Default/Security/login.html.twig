@@ -1,0 +1,25 @@
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    {% if error %}
+        <div>test</div>
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {%  endif %}
+
+    <form action="{{ path('mi03_vitrine_login') }}" method="post">
+        <label for="username">{{ 'username'|trans }}</label>
+        <input type="text" id="username" name="_username" value="{{ last_username }}">
+
+        <label for="password">{{ 'password'|trans }}</label>
+        <input type="password" id="password" name="_password" value="{{ last_username }}">
+
+        <input type="hidden" name="_target_path" value="{{ path('mi03_vitrine_homepage') }}"/>
+
+        <button type="submit">Login</button>
+    </form>
+
+
+{% endblock %}
+
+
+

@@ -14,6 +14,10 @@
                 <td>{{ client.nom }}</td>
             </tr>
             <tr>
+                <th>Prenom</th>
+                <td>{{ client.prenom }}</td>
+            </tr>
+            <tr>
                 <th>Mail</th>
                 <td>{{ client.mail }}</td>
             </tr>
@@ -36,6 +40,5 @@
                 <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
         </li>
-
     </ul>
 {% endblock %}

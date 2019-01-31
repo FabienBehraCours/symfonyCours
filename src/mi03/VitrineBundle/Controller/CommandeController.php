@@ -19,20 +19,20 @@ class CommandeController extends Controller
      */
     public function indexAction()
     {
+        if(!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')){
+            throw $this->createAccessDeniedException();
+        }
         $em = $this->getDoctrine()->getManager();
-        $session = $this->get("session");
-        $idClient =$session->get('clientId');
+        $user = $this->getUser();
 
-        $commandes = $em->getRepository('mi03VitrineBundle:Commande')->findAll();
-        /**@var LigneCommande $item*/
-        foreach ($commandes as $key => $item){
-            if ($item->getClient()->getId() != $idClient){
-                unset($commandes[$key]);
-            }
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')){
+            $commandes = $em->getRepository('mi03VitrineBundle:Commande')->findAll();
+        }elseif($this->get('security.authorization_checker')->isGranted('ROLE_USER')){
+            $commandes = $em->getRepository('mi03VitrineBundle:Commande')->findBy(array('client' => $user));
         }
 
         return $this->render('commande/index.html.twig', array(
-            'commandes' => $commandes,
+            'commandes' => $commandes
         ));
     }
 
@@ -44,6 +44,11 @@ class CommandeController extends Controller
      */
     public function newAction(Request $request)
     {
+
+        if(!$this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')){
+            throw $this->createAccessDeniedException();
+        }
+
         $commande = new Commande();
         $form = $this->createForm('mi03\VitrineBundle\Form\CommandeType', $commande);
         $form->handleRequest($request);
@@ -68,6 +73,18 @@ class CommandeController extends Controller
      */
     public function showAction(Commande $commande)
     {
+        if(!$this->get('security.authorization_checker')->isGranted('ROLE_USER')){
+            throw $this->createAccessDeniedException();
+        }
+
+        if(!$this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')){
+            //acces denied si on regarde une autre commande que les notres
+            if($this->getUser()->getId() != $commande->getClient()->getId()){
+                throw $this->createAccessDeniedException();
+            }
+        }
+
+
         $deleteForm = $this->createDeleteForm($commande);
 
         return $this->render('commande/show.html.twig', array(
@@ -82,6 +99,11 @@ class CommandeController extends Controller
      */
     public function editAction(Request $request, Commande $commande)
     {
+        if(!$this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')){
+            throw $this->createAccessDeniedException();
+        }
+
+
         $deleteForm = $this->createDeleteForm($commande);
         $editForm = $this->createForm('mi03\VitrineBundle\Form\CommandeType', $commande);
         $editForm->handleRequest($request);
@@ -105,6 +127,10 @@ class CommandeController extends Controller
      */
     public function deleteAction(Request $request, Commande $commande)
     {
+        if(!$this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')){
+            throw $this->createAccessDeniedException();
+        }
+
         $form = $this->createDeleteForm($commande);
         $form->handleRequest($request);
 

@@ -1,0 +1,7 @@
+<h3>Confirmation de votre commande</h3>
+
+Bonjour {{ client.NomComplet }},
+Nous vous confirmons la création de votre commande N°{{ commande.id }}!
+
+Vous pouvez allez la consulter <a href="http://localhost:8000{{ path('commande_show', {'id': commande.id }) }}">ici</a>
+

@@ -1,0 +1,11 @@
+{% extends "mi03VitrineBundle::layout.html.twig" %}
+{# override the body block from embedded.html.twig #}
+{% block content %}
+    {% if error != null %}
+      <div>{{ error }}</div>
+    {%  endif %}
+  {{ form(form) }}
+
+{% endblock %}
+
+

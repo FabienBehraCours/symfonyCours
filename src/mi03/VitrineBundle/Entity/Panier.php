@@ -21,6 +21,10 @@ class Panier
     public function getContenu() {
         return $this->contenu;
     }
+
+    public function setContenu($array) {
+        $this->contenu = $array;
+    }
     public function ajoutArticle (Article $article, $qte = 1) {
         //si l'article est déjà dans une des lignes de commandes, on augmente juste sa quantité, sinon on créer une nouvelle ligne de commande
         if($article == null){

@@ -6,14 +6,6 @@ services:
     class : mi03\VitrineBundle\Services\PanierUtils
     arguments: ["@doctrine.orm.entity_manager"]
 
-  mi03_vitrine_montantPanier:
-    class : mi03\VitrineBundle\Services\PricePanier
-    arguments: ["@doctrine.orm.entity_manager"]
-
-  mi03_vitrine_gestionConnexion:
-    class : mi03\VitrineBundle\Services\GestionConnexion
-    arguments: ["@doctrine.orm.entity_manager"]
-
-  mi03_vitrine_gestionInscription:
-    class: mi03\VitrineBundle\Services\GestionInscription
-    arguments: ["@doctrine.orm.entity_manager"]
+  miO3_vitrine.mailerUtils:
+    class : mi03\VitrineBundle\Services\MailerUtils
+    arguments: ["@swiftmailer.mailer","@templating.engine.twig"]

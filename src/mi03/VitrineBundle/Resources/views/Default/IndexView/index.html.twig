@@ -2,7 +2,7 @@
 {% extends "mi03VitrineBundle::layout.html.twig" %}
 {# override the body block from embedded.html.twig #}
 {% block content %}
-    <h1>Bienvenue {{ name }}</h1>
+    <h1>{{ 'bienvenue'|trans }} {{ name }}</h1>
 
     {#slider meilleurs ventes#}
     {% include '@mi03Vitrine/Default/IndexView/sliderMostSold.html.twig' %}

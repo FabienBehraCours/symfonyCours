@@ -97,5 +97,14 @@ class PanierUtils
         return $price;
     }
 
+    public function removeQuantityInStockArticle($commande){
+        foreach ($commande->getLigneCommande() as $item){
+            $item->getArticle()->removeQuantityInStock(intval($item->getQuantite(),10));
+            dump($item->getArticle());
+            $this->entityManager->persist($item->getArticle());
+        }
+        $this->entityManager->flush();
+    }
+
 
 }

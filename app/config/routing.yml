@@ -1,6 +1,9 @@
 mi03_vitrine:
     resource: "@mi03VitrineBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /{_locale}/
+
+    requirements:
+        _locale: en|fr
 
 app:
     resource: '@AppBundle/Controller/'

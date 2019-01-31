@@ -1,0 +1,34 @@
+accueil: Home
+mentions_legales: 'Legal Notice'
+catalogue: Catalog
+panier: Cart
+panier_vide: 'Empty cart'
+espace_admin: 'Admin place'
+mon_compte: 'My Account'
+mes_commandes: 'My orders'
+logout: Logout
+login: Login
+register: Register
+bienvenue: Welcome
+username: Username
+password: Password
+voir_panier: 'See the cart'
+article: Article
+prix_unitaire: 'Unit price'
+quantite: Quantity
+vider_panier: 'Clear the cart'
+ajouter_article: 'Add article'
+valider_panier: 'Validate cart'
+meilleurs_ventes: 'Most sold'
+ajouter_panier: 'Add to cart'
+bienvenue_espace_admin: 'Welcom on the admin place'
+gestion_commandes: 'Orders management'
+gestion_clients: 'Customers management'
+gestion_articles: 'Articles management'
+recap_commande: 'Order resume'
+message_confirm_commande: 'We confirm you the creation of the order'
+num_commande: 'Order number'
+nom: Name
+mail: Mail
+articles_categorie: 'Articles by category'
+rupture_stock: Sold out

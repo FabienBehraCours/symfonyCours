@@ -2,6 +2,14 @@ mi03_vitrine_client:
     resource: "@mi03VitrineBundle/Resources/config/routing/client.yml"
     prefix:   /client
 
+mi03_vitrine_category:
+        resource: "@mi03VitrineBundle/Resources/config/routing/category.yml"
+        prefix:   /category
+
+mi03_vitrine_article:
+        resource: "@mi03VitrineBundle/Resources/config/routing/article.yml"
+        prefix:   /article
+
 mi03_vitrine_homepage:
     path:     /accueil/{name}
     defaults: {
@@ -24,6 +32,14 @@ mi03_vitrine_panier:
     path: /panier
     defaults: {_controller: mi03VitrineBundle:Panier:index}
 
+mi03_vitrine_panier_supprimer_ligne_commande:
+    path: /deleteLigneCommandePanier/{idArticle}
+    defaults: {_controller: mi03VitrineBundle:Panier:deleteArticlePanier}
+
+mi03_vitrine_panier_change_quantity_article:
+    path: /changeQuantityArticlePanier/{idArticle}
+    defaults: {_controller: mi03VitrineBundle:Panier:changeQuantityArticlePanier}
+
 mi03_vitrine_ajouter_article:
     path: /ajouterArticle/{id}
     defaults: {_controller: mi03VitrineBundle:Catalogue:ajouterArticle}
@@ -45,9 +61,17 @@ mi03_clear_session:
     defaults: {_controller: mi03VitrineBundle:Default:clearSession}
 
 mi03_vitrine_login:
-    path: /connexion
-    defaults: {_controller: mi03VitrineBundle:GestionComptes:connexion}
+    path: /login
+    defaults: {_controller: mi03VitrineBundle:Security:login}
+
+mi03_vitrine_logout:
+    path: /logout
+    defaults: {_controller: mi03VitrineBundle:Security:logout}
 
 mi03_vitrine_signin:
-    path: /inscription
-    defaults: {_controller: mi03VitrineBundle:GestionComptes:inscription}
+    path: /register
+    defaults: {_controller: mi03VitrineBundle:Security:create}
+
+mi03_vitrine_backoffice_homepage:
+    path: /backoffice
+    defaults: {_controller: mi03VitrineBundle:Default:indexBackOffice}

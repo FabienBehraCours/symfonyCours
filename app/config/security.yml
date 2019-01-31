@@ -2,23 +2,32 @@
 # https://symfony.com/doc/current/security.html
 security:
 
+    encoders:
+        mi03\VitrineBundle\Entity\Client:
+            algorithm: bcrypt
+            cost: 12
+
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_USER
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory: ~
+        utilisateurs:
+            entity: { class: mi03VitrineBundle:Client, property: mail}
 
     firewalls:
-        # disables authentication for assets and the profiler, adapt it according to your needs
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
-
-        main:
+        vitrine_area:
+            pattern: ^/
             anonymous: ~
-            # activate different ways to authenticate
-
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
-
-            # https://symfony.com/doc/current/security/form_login_setup.html
-            #form_login: ~
+            form_login:
+                login_path: /fr/login
+                check_path:  /fr/login
+            logout:
+                path: /fr/logout
+                target: /fr/accueil
+    access_control:
+        - { path: ^/(en|fr)/client$, roles: ROLE_USER}
+        - { path: ^/(en|fr)/commande$, roles: ROLE_USER}
+        - { path: ^/(en|fr)/backoffice$, roles: ROLE_ADMIN}
+        - { path: ^/(en|fr)/edit$, roles: ROLE_ADMIN}
+        - { path: ^/(en|fr)/commande$, roles: ROLE_ADMIN}
+        - { path: ^/(en|fr)/article$, roles: ROLE_ADMIN}

@@ -2,35 +2,35 @@
 {% extends "mi03VitrineBundle::layout.html.twig" %}
 {# override the body block from embedded.html.twig #}
 {% block content %}
-    <h1>Recapitulatif de la commande</h1>
-    <p>Nous vous confirmons la création de la commande suivante :</p>
+    <h1>{{ 'recap_commande'|trans }}</h1>
+    <p>{{ 'message_confirm_commande'|trans }} :</p>
     <div class="row">
         <div class="input-field col s12">
             <input disabled value="{{ commande.id }}" id="numCommande" type="text" class="validate">
-            <label for="numCommande">numéro de la commande</label>
+            <label for="numCommande">{{ 'num_commande'|trans }}</label>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
             <input disabled value="{{ commande.client.nom }}" id="nomClient" type="text" class="validate">
-            <label for="nomClient">Nom</label>
+            <label for="nomClient">{{ 'nom'|trans }}</label>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
             <input disabled value="{{ commande.client.mail }}" id="email" type="email" class="validate">
-            <label for="email">Email</label>
+            <label for="email">{{ 'mail'|trans}}</label>
         </div>
     </div>
     </br>
-    <p>Avec le panier suivant : </p>
+    <p>{{ 'panier'|trans }}: </p>
     <div class="panierRecapCommande">
         <table>
             <thead>
             <tr>
-                <th>Article</th>
-                <th>Prix Unitaire</th>
-                <th>Quantite</th>
+                <th>{{ 'article'|trans }}</th>
+                <th>{{ 'prix_unitaire'|trans }}</th>
+                <th>{{ 'quantite'|trans }}</th>
             </tr>
             </thead>
 

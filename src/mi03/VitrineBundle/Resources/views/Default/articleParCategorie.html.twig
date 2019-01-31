@@ -2,7 +2,7 @@
 {% extends "mi03VitrineBundle::layout.html.twig" %}
 {# override the body block from embedded.html.twig #}
 {% block content %}
-    <h1>Articles de la catégorie</h1>
+    <h1>{{ 'articles_categorie'|trans }}</h1>
 
     {% for item in articlesParCategorie  %}
         <div class="row">
@@ -13,7 +13,11 @@
                         <span class="card-title">{{ item.price }}</span>
                     </div>
                     <div class="card-action">
-                        <a href="{{ path('mi03_vitrine_ajouter_article',{'id': item.id}) }}">Ajouter au panier</a>
+                        {% if item.quantityInStock > 0 %}
+                            <a href="{{ path('mi03_vitrine_ajouter_article',{'id': item.id}) }}">{{ 'ajouter_panier'|trans }}</a>
+                        {% else %}
+                            <a class="isDisabled" href="">{{ 'rupture_stock'|trans }}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

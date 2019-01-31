@@ -13,7 +13,7 @@ class CommandeType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('etat')->add('date')->add('client');
+        $builder->add('etat');
     }/**
      * {@inheritdoc}
      */

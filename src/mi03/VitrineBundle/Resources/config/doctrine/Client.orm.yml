@@ -15,9 +15,10 @@ mi03\VitrineBundle\Entity\Client:
     mail:
       type: string
       length: 100
+      unique: true
     password:
       type: string
-      length: 20
+      length: 150
   oneToMany:
     commandes:
       targetEntity: Commande

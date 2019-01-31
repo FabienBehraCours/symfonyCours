@@ -11,6 +11,7 @@
     <link href="{{ asset('bundles/mi03vitrine/css/panier.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{{ asset('bundles/mi03vitrine/css/commande.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{{ asset('bundles/mi03vitrine/css/gestionComptes.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="{{ asset('bundles/mi03vitrine/scripts/jQuery-3.3.1.js') }}" type="text/javascript"></script>
     <script src="{{ asset('bundles/mi03vitrine/scripts/materialize.js') }}" type="text/javascript"></script>
 </head>
@@ -18,11 +19,14 @@
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="{{ path('mi03_vitrine_homepage', { 'name': 'Fabien' }) }}">Accueil</a></li>
-            <li><a href="{{ path('mi03_vitrine_mentions') }}">Mentions légales</a></li>
-            <li><a href="{{ path('mi03_vitrine_catalogue') }}">Catalogue</a></li>
-            <li><a href="#modal1" class="modal-trigger" data-target="apercuPanier">Panier</a></li>
-            <li><a href="{{ path('mi03_clear_session') }}">Clear Session</a></li>
+            <li><a href="{{ path('mi03_vitrine_homepage', { 'name': 'Fabien' }) }}">{% trans %} accueil {% endtrans %}</a></li>
+            <li><a href="{{ path('mi03_vitrine_mentions') }}">{% trans %} mentions_legales {% endtrans %}</a></li>
+            <li><a href="{{ path('mi03_vitrine_catalogue') }}">{% trans %} catalogue {% endtrans %}</a></li>
+            <li><a href="#modal1" class="modal-trigger" data-target="apercuPanier">{% trans %} panier {% endtrans %}</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                    <i class="material-icons dp48">account_circle</i>
+                </a>
+            </li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
@@ -42,11 +46,30 @@
     {{ render(controller('mi03VitrineBundle:ApercuPanier:index')) }}
 </div>
 
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content" style="width : auto">
+    {% if is_granted('ROLE_ADMIN') %}
+        <li><a href="{{ path('mi03_vitrine_backoffice_homepage') }}">{% trans %} espace_admin {% endtrans %}</a></li>
+    {% endif %}
+    {% if is_granted('ROLE_USER') %}
+        <li><a href="{{ path('client_show',{'id': app.user.id}) }}">{% trans %} mon_compte {% endtrans %}</a></li>
+        <li><a href="{{ path('commande_index') }}">{% trans %} mes_commandes {% endtrans %}</a></li>
+        <li><a href="{{ path('mi03_vitrine_logout') }}">{% trans %} logout {% endtrans %}</a></li>
+    {% elseif is_granted('IS_AUTHENTICATED_ANONYMOUSLY') %}
+        <li><a href="{{ path('mi03_vitrine_login') }}">{% trans %} login {% endtrans %}</a></li>
+        <li><a href="{{ path('mi03_vitrine_signin') }}">{% trans %} register {% endtrans %}</a></li>
+    {% endif %}
+
+
+</ul>
+
 </body>
 </html>
 
 <script>
     $(document).ready(function(){
         $('.modal').modal();
+        $(".dropdown-trigger").dropdown();
     });
 </script>

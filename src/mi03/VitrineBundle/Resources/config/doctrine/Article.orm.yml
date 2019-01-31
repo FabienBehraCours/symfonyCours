@@ -12,6 +12,8 @@ mi03\VitrineBundle\Entity\Article:
     price:
       type: decimal
       scale: 2
+    quantityInStock:
+      type: integer
   manyToOne:
     category:
       targetEntity: Category

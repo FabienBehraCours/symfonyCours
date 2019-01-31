@@ -2,14 +2,16 @@
 {% extends "mi03VitrineBundle::layout.html.twig" %}
 {# override the body block from embedded.html.twig #}
 {% block content %}
-    <h1>Panier</h1>
+    <h1>{{ 'panier'|trans }}</h1>
 
     <table>
         <thead>
         <tr>
-            <th>Article</th>
-            <th>Prix Unitaire</th>
-            <th>Quantite</th>
+            <th>{{ 'article'|trans }}</th>
+            <th>{{ 'prix_unitaire'|trans }}</th>
+            <th>{{ 'quantite'|trans }}</th>
+            <th>Total</th>
+            <th>Action</th>
         </tr>
         </thead>
 
@@ -18,7 +20,21 @@
                 <tr>
                     <td>{{ item.article.name }}</td>
                     <td>{{ item.priceArticle }}</td>
-                    <td>{{ item.quantite }}</td>
+                    <td>
+                        <form id="changeQuantityForm" method="post" action="{{ path('mi03_vitrine_panier_change_quantity_article', {'idArticle':item.article.id}) }}">
+                            <input id="quantityInput" name="quantity" type="number" value="{{ item.quantite }}" min="1" max="{{ item.article.quantityInStock }}">
+                            <input class="btn-medium waves-button-input" type="submit">
+
+                        </form>
+                    </td>
+                    <td>
+                        {{ item.priceArticle * item.quantite }}
+                    </td>
+                    <td>
+                        <a href="{{ path('mi03_vitrine_panier_supprimer_ligne_commande',{'idArticle': item.article.id}) }}">
+                            <i class="material-icons small icon-red">clear</i>
+                        </a>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
@@ -26,10 +42,10 @@
 
     <h4 id="totalPanier">Total :{{ prixPanier }} €</h4>
     <div class="btns-panier">
-        <a href="{{ path('mi03_vitrine_vider_panier') }}" class="waves-effect waves-light btn-large">Vider le panier</a>
-        <a href="{{ path('mi03_vitrine_catalogue') }}" class="waves-effect waves-light btn-large">Ajouter un article</a>
+        <a href="{{ path('mi03_vitrine_vider_panier') }}" class="waves-effect waves-light btn-large">{{ 'vider_panier'|trans }}</a>
+        <a href="{{ path('mi03_vitrine_catalogue') }}" class="waves-effect waves-light btn-large">{{ 'ajouter_article'|trans }}</a>
         {% if(ligneCommande|length > 0) %}
-            <a href="{{ path('mi03_vitrine_validation_panier') }}" class="waves-effect waves-light btn-large btn-valider-panier">Valider le panier</a>
+            <a href="{{ path('mi03_vitrine_validation_panier') }}" class="waves-effect waves-light btn-large btn-valider-panier">{{ 'valider_panier'|trans }}</a>
         {% endif %}
     </div>
 
